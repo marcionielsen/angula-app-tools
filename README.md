@@ -1,2 +1,2 @@
-# angula-app-tools
-Projeto de aprendizado em Agular
+# angular-app-tools
+Projeto de aprendizado em Angular
