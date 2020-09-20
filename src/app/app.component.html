@@ -1,0 +1,34 @@
+
+<h1>{{titulo}}</h1> 
+<hr>
+<br>
+<label ><Strong>Mensagem: </Strong></label> 
+<br>
+<div class="mat-app-background basic-container" > 
+  <form id="formulario" [formGroup]="formulario">
+    <mat-form-field class="app-tools-msg">
+      <mat-label>Digite uma frase acentuada</mat-label>
+      <input matInput formControlName="texto" type="text" name="txtMensagem" > 
+      <!--mat-raised-button class="app-tools-btn-enviar" id="btnConverter" type="button" value="Enviar" onclick="converter();"-->
+    </mat-form-field>
+    <!--div class="app-tools-button-row"-->
+      <button mat-raised-button color="primary" class="app-tools-btn-enviar"  (click)="converter()">Enviar</button>
+    <!--/div-->
+    <br><br>
+    <mat-form-field class="app-tools-convertido">
+      <mat-label>Frase convertida</mat-label>
+      <textarea matInput class="app-tools-convertido" id="txtConvertido"  formControlName="txtConvertido" ></textarea>
+    </mat-form-field>
+    <!--mat-form-field appearance="fill">
+      <mat-label>Select</mat-label>
+      <mat-select>
+        <mat-option value="option">Option</mat-option>
+      </mat-select>
+    </mat-form-field-->
+    <!--p>{{textoConvertido}}</p-->
+
+
+  </form>
+</div>
+
+<!--router-outlet></router-outlet-->
